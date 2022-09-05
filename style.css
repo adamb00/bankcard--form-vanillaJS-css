@@ -240,6 +240,7 @@ form {
     background: url(/images/bg-main-mobile.png) no-repeat;
     background-size: 100%;
     margin: auto;
+    position: static;
   }
   .form {
     margin: 400px auto;
