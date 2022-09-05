@@ -241,6 +241,7 @@ form {
     background-size: 100%;
     margin: auto;
     position: static;
+    height: auto;
   }
   .form {
     margin: 400px auto;
