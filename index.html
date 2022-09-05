@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="images">
+      <div class="front">
+        <div class="labelOnFrontCard">
+          <label for="" class="cardLabel numberOnCard" id="numberOnCard"></label>
+          <label for="" class="cardLabel nameOnCard" id="nameOnCard"></label>
+          <div for="" class="expOnCard" id="expOnCard">
+            <label for="" class="cardLabel monthOnCard"></label>
+            <label for="" class="cardLabel yearOnCard"></label>
+          </div>
+        </div>
+        <img src="/images/bg-card-front.png" alt="">
+        <div class="pip">
+          <img src="/images/card-logo.svg" alt="">
+        </div>
+      </div>
+      <div class="back">
+        <div class="labelOnBackCard">
+          <label for="" class="cardLabel cvcOnCard" id="cvcOnCard"></label>
+        </div>
+        <img src="/images/bg-card-back.png" alt="">
+      </div>
+    </div>
+
+    <form action="" class="form">
+      <div class="cardholder--name">
+        <div class="label">
+          <label for="cardholder">cardholder name</label>
+        </div>
+        <div class="inputName input">
+          <input type="text" class="cardholder">
+          <label for="" class="error errorName"></label>
+        </div>
+      </div>
+      <div class="cardholder--number">
+        <div class="label">
+          <label for="number">card number</label>
+        </div>
+        <div class="inputNumber input">
+          <input type="text" id="number" class="cardNumber" maxlength="16">
+          <label for="" class="error errorNum"></label>
+        </div>
+      </div>
+      <div class="lastLine">
+          <div class="expDate">
+            <label for="exp" class="label">exp.date (mm/yy)</label>
+            <div class="inputDate input">
+              <input type="text" class="inputMonth" maxlength="2" placeholder="MM">
+              <input type="text" class="inputYear" maxlength="2" placeholder="YY">
+              
+            </div>
+            <label for="" class="error errorDate"></label>
+          </div>
+          <div class="cvc">
+            <label for="cvc " class="label">cvc</label>
+            <div class="inputCVC input">
+              <input type="text" class="cvcInput" maxlength="3" placeholder="e.g. 123">
+            </div>
+          <label for="" class="error errorCVC"></label>
+
+          </div>
+        </div>
+      <button class="btnConfirm" id="btnConfirm" disabled>Confirm</button>
+    </form>
+
+    <div class="thankContainer">
+      <div class="thank">
+
+        <img src="/images/icon-complete.svg" alt="">
+        <div class="text">
+          <div class="firstLine">THANK YOU!</div>
+          <div class="secondLine">We've added your card details</div>
+        </div>
+        <button class="btnContinue" id="btnContinue">Continue</button>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/adamb00?tab=repositories" target="_blank">adamb00</a>.
+  </div>
+  <script defer src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+$color-error: hsl(0, 100%, 66%);
+$color-linear--from: hsl(249, 99%, 64%);
+$color-linear--to: hsl(278, 94%, 30%);
+$color-white: hsl(0, 0%, 100%);
+$color-light-violet: hsl(270, 3%, 87%);
+$color-dark-violet: hsl(279, 6%, 55%);
+$color-very-dark--violet: hsl(278, 68%, 11%);
+$fs: 18px;
+$fw: 500;
+$borrad: 5px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: auto;
+}
+
+.container {
+  display: grid;
+  background: url(/images/bg-main-desktop.png) no-repeat;
+  background-position-x: 0;
+  width: 90%;
+  margin: auto;
+  font-family: 'Space Grotesk', sans-serif;
+
+  input {
+    font-size: 14px;
+  }
+}
+.thankContainer {
+  display: none;
+  position: relative;
+  margin: auto;
+  padding: 400px 0 400px 800px;
+  letter-spacing: 2px;
+}
+.thank {
+  display: inline;
+  margin: auto;
+}
+.thankContainer img {
+  margin: 30px 0 30px 50px;
+}
+.firstLine {
+  margin: 10px 0 15px 15px;
+  font-size: 25px;
+  color: $color-very-dark--violet;
+}
+.secondLine {
+  margin: 10px 0 20px -55px;
+  font-size: 18px;
+  color: $color-dark-violet;
+}
+.btnContinue {
+  border-radius: $borrad;
+  padding: 15px;
+  width: 160%;
+  border: none;
+  background-color: $color-very-dark--violet;
+  color: $color-white;
+  font-size: 18px;
+  margin: 20px 0 0 -115px;
+}
+
+.form {
+  position: relative;
+  margin: auto;
+  padding: 300px 0 300px 700px;
+}
+form {
+  display: block;
+}
+.images {
+  position: fixed;
+}
+.images img {
+  width: 90%;
+}
+.front {
+  position: fixed;
+  top: 24%;
+  left: 20%;
+}
+.pip {
+  z-index: 12;
+  position: fixed;
+  top: 25%;
+  left: 21%;
+}
+.back {
+  position: fixed;
+  top: 50%;
+  left: 25%;
+}
+.cardLabel {
+  position: absolute !important;
+  display: block;
+  z-index: 15;
+  font-size: 20px;
+  color: $color-white;
+}
+.numberOnCard {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  width: auto;
+  font-size: 26px;
+  transform: translateY(-50%);
+}
+.nameOnCard {
+  position: absolute;
+  bottom: 15%;
+  left: 8%;
+}
+.expOnCard {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  bottom: 15%;
+  left: 80%;
+  .monthOnCard {
+    display: flex;
+    position: relative;
+    right: 16%;
+  }
+  .yearOnCard {
+    position: relative;
+  }
+}
+.cvcOnCard {
+  position: absolute;
+  right: 20%;
+  top: 43%;
+}
+.label {
+  text-transform: uppercase;
+  font-size: $fs;
+  font-weight: $fw;
+  letter-spacing: 2px;
+  color: $color-very-dark--violet;
+}
+.input input {
+  border-radius: $borrad;
+  border: 1px solid $color-linear--from;
+  margin: 10px 0;
+}
+.input input:focus,
+.input input:hover {
+  text-decoration: none;
+  outline: none;
+}
+.inputName input,
+.inputNumber input,
+.btnConfirm {
+  width: 100%;
+  padding: 10px;
+}
+.inputLastLine input {
+  padding: 10px;
+}
+.lastLine {
+  display: flex;
+  justify-content: space-evenly;
+}
+.expDate {
+  width: 100%;
+}
+.cvc {
+  width: 100%;
+}
+.inputMonth {
+  width: 35%;
+}
+.inputYear {
+  width: 35%;
+}
+.inputCVC {
+  width: 100%;
+}
+.inputCVC input {
+  padding: 10px;
+}
+.inputDate input {
+  padding: 10px;
+}
+
+.btnConfirm {
+  background-color: $color-very-dark--violet;
+  border: none;
+  border-radius: $borrad;
+  color: $color-white;
+  font-size: $fs;
+  margin: 10px 0 5px 0;
+}
+
+.error {
+  margin: 0 0 15px 0px;
+  color: $color-error;
+  font-size: 12px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 1200px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    background: url(/images/bg-main-mobile.png) no-repeat;
+    background-size: 100%;
+    margin: auto;
+  }
+  .form {
+    margin: 400px auto;
+    padding: 0;
+    width: 90%;
+  }
+  .back {
+    top: 2%;
+    left: 25%;
+  }
+
+  .front {
+    z-index: 1;
+    top: 10.6%;
+    left: 10%;
+  }
+  .pip {
+    left: 12%;
+    top: 11.5%;
+  }
+  .thankContainer {
+    margin: 400px auto;
+    padding: 0;
+    left: 7%;
+  }
+}
